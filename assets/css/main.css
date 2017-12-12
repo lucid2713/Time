@@ -975,17 +975,17 @@
 
 	.panel {
 		padding: 4em 4em 2em 4em ;
-		-moz-transform: translateY(100vh);
-		-webkit-transform: translateY(100vh);
-		-ms-transform: translateY(100vh);
-		transform: translateY(100vh);
+		-moz-transform: translateY(-100vh);
+		-webkit-transform: translateY(-100vh);
+		-ms-transform: translateY(-100vh);
+		transform: translateY(-100vh);
 		-moz-transition: -moz-transform 0.5s ease;
 		-webkit-transition: -webkit-transform 0.5s ease;
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
 		background: rgba(36, 38, 41, 0.975);
-		bottom: 4em;
+		top: 4.5em;
 		left: 0;
 		max-height: calc(80vh - 4em);
 		overflow-y: auto;
@@ -1399,12 +1399,12 @@
 		-ms-user-select: none;
 		-webkit-user-select: none;
 		background: #1f2224;
-		/*top: -1em;*/
-		bottom: -1em;
+		top: 0em;
+		/*bottom: -1em;*/
 		height: 5em;
 		left: 0;
 		line-height: 4em;
-		padding: 0 1.5em;
+		padding: 0 1em;
 		/*padding: 1.5em 1.5em;*/
 		position: fixed;
 		user-select: none;
@@ -1416,7 +1416,7 @@
 			-moz-transform: translateY(4em);
 			-webkit-transform: translateY(4em);
 			-ms-transform: translateY(4em);
-			transform: translateY(4em);
+			transform: translateY(1em);
 		}
 
 		#header h1 {
@@ -1534,6 +1534,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		margin-top: 5em;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
 
@@ -1617,7 +1618,7 @@
 			left: 0;
 			opacity: 0;
 			position: absolute;
-			top: 0;
+			top: 5em;
 			visibility: hidden;
 			width: 100%;
 			z-index: 1;
@@ -1992,11 +1993,11 @@
 
 /* Footer */
 
-	#footer .copyright {
+	#header .copyright {
 		color: #505051;
 		font-size: 0.9em;
 	}
 
-		#footer .copyright a {
+		#header .copyright a {
 			color: inherit;
 		}
